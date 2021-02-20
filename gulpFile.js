@@ -11,7 +11,7 @@ const styles = () => {
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(autoprefixer({
       cascade: true,
-      overrideBrowsersList: ['last 5 version']
+      overrideBrowserslist: ['last 5 versions']
     }))
     .pipe(concat('main.css'))
     .pipe(dest('./docs/css/'))
