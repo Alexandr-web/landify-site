@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &-btn {
+      display: none;
+    }
     &-block {
       &:nth-child(1) {
         display: flex;
@@ -499,4 +502,10 @@
       }
     }
   }
+}
+
+@import './_media';
+
+.show-right {
+  right: 0;
 }

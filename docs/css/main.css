@@ -409,6 +409,10 @@ img {
   align-items: center;
 }
 
+.header__nav-btn {
+  display: none;
+}
+
 .header__nav-block:nth-child(1) {
   display: flex;
   align-items: center;
@@ -925,4 +929,580 @@ img {
 
 .footer__block-list-images-item:not(:last-child) {
   margin-bottom: 17px;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1000px;
+  }
+  .welcome__heading {
+    font-size: 60px;
+  }
+  .welcome__link {
+    font-size: 19px;
+  }
+  .stories__heading::before {
+    left: -60px;
+    width: 100px;
+    height: 100px;
+  }
+  .desc__block-text {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 900px;
+  }
+  .welcome__heading {
+    font-size: 53px;
+  }
+  .welcome__link {
+    font-size: 18px;
+    min-width: 160px;
+    height: 59px;
+  }
+  .stories__heading::before {
+    left: -30px;
+    width: 85px;
+    height: 85px;
+    top: -30px;
+  }
+  .stories__heading-title {
+    font-size: 45px;
+  }
+  .total__heading {
+    font-size: 45px;
+  }
+  .app__block-item-top {
+    width: 75%;
+  }
+  .app__block-item-top-title {
+    font-size: 45px;
+  }
+  .desc__img {
+    width: 300px;
+    height: 650px;
+  }
+  .desc__link {
+    font-size: 19px;
+  }
+  .features__heading-title {
+    font-size: 45px;
+  }
+  .features__heading-desc {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+  .welcome__heading {
+    font-size: 49px;
+  }
+  .welcome__link {
+    font-size: 17px;
+    min-width: 154px;
+    height: 52px;
+  }
+  .features__heading-title {
+    font-size: 40px;
+  }
+  .features__list-item-heading {
+    font-size: 22px;
+  }
+  .features__list-item-desc {
+    font-size: 15px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 90;
+  }
+  .header__nav-block:nth-child(1) {
+    margin: 0 auto;
+  }
+  .header__nav-list {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    flex-direction: column;
+    background: #000;
+    width: 250px;
+    height: 100vh;
+    justify-content: center;
+    transition: .5s;
+    z-index: 99;
+  }
+  .header__nav-list-item:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+  .header__nav-list-link {
+    font-size: 19px;
+    color: #fff;
+  }
+  .header__nav-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background: #000;
+    order: -1;
+  }
+  .header__nav-btn-line {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: #fff;
+    border-radius: 3px;
+  }
+  .stories__heading::before {
+    left: -25px;
+    width: 80px;
+    height: 80px;
+    top: -25px;
+  }
+  .stories__heading-title {
+    font-size: 40px;
+  }
+  .stories__block:nth-child(1) .stories__comment {
+    width: 100%;
+  }
+  .stories__block:nth-child(2) .stories__comment:nth-child(1), .stories__block:nth-child(2) .stories__comment:nth-child(2) {
+    width: 100%;
+  }
+  .desc__block-img {
+    height: 395px;
+  }
+  .app__block-item-top {
+    width: 60%;
+  }
+  .app__block-item-top-title {
+    font-size: 40px;
+  }
+  .app__block-item-top-desc {
+    font-size: 16px;
+  }
+  .total__heading {
+    font-size: 40px;
+  }
+  .total__desc {
+    font-size: 16px;
+  }
+  .total__list-item {
+    width: 48%;
+  }
+  .total__list-item-heading {
+    font-size: 25px;
+  }
+  .total__list-item-info {
+    font-size: 15px;
+  }
+  .desc__par {
+    font-size: 17px;
+  }
+  .desc__link {
+    font-size: 17px;
+  }
+  .fashion__heading, .fashion__desc {
+    width: 48%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+  .welcome__heading {
+    font-size: 45px;
+  }
+  .features__heading-title {
+    font-size: 35px;
+  }
+  .features__heading-desc {
+    font-size: 16px;
+  }
+  .features__list-item {
+    width: 48%;
+  }
+  .stories__heading-title {
+    font-size: 35px;
+  }
+  .stories__heading-desc {
+    font-size: 16px;
+  }
+  .total__heading {
+    font-size: 35px;
+  }
+  .total__list-item-heading {
+    font-size: 23px;
+  }
+  .desc__block-img {
+    width: 40%;
+  }
+  .desc__block-text {
+    width: 55%;
+  }
+  .desc__heading {
+    font-size: 35px;
+  }
+  .desc__par {
+    font-size: 16px;
+  }
+  .desc__link {
+    font-size: 16px;
+  }
+  .fashion__heading {
+    font-size: 35px;
+  }
+  .fashion__desc {
+    font-size: 16px;
+  }
+  .app__block {
+    width: 100%;
+  }
+  .app__block-item-top {
+    width: 100%;
+  }
+  .app__block-item-top-title {
+    font-size: 35px;
+  }
+  .app__block-item-bottom-title {
+    font-size: 16px;
+  }
+  .app__list-images {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+  .welcome {
+    min-height: 550px;
+  }
+  .welcome__heading {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .welcome__link {
+    font-size: 16px;
+    min-width: 150px;
+    height: 50px;
+  }
+  .companies .container {
+    max-width: 100%;
+  }
+  .companies__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  }
+  .features__heading-title {
+    font-size: 30px;
+  }
+  .features__heading-desc {
+    font-size: 15px;
+  }
+  .stories__heading::before {
+    left: -20px;
+    width: 70px;
+    height: 70px;
+    top: -20px;
+  }
+  .stories__heading-title {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .stories__comment-desc {
+    font-size: 16px;
+  }
+  .stories__comment-user-name {
+    font-size: 17px;
+  }
+  .stories__comment-user-skills {
+    font-size: 15px;
+  }
+  .stories__comment-img {
+    max-width: 50%;
+  }
+  .stories__comment-main {
+    margin: 15px 0;
+  }
+  .total__heading {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .total__content {
+    flex-direction: column;
+  }
+  .total__block {
+    width: 100%;
+  }
+  .total__block:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .total__list-item-heading {
+    font-size: 19px;
+  }
+  .desc__heading {
+    font-size: 30px;
+  }
+  .desc__par {
+    margin: 15px 0;
+  }
+  .fashion__heading {
+    font-size: 30px;
+  }
+  .fashion__desc {
+    font-size: 15px;
+  }
+  .app__block-item-top-title {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .footer__block-list-link {
+    font-size: 14px;
+  }
+  .footer__block-copyright {
+    font-size: 13px;
+  }
+  .footer__block-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+  .header__nav-btn {
+    width: 35px;
+    height: 35px;
+    padding: 8px 5px;
+  }
+  .header__nav-links-item img {
+    max-width: 100px;
+  }
+  .welcome {
+    min-height: 425px;
+  }
+  .welcome__heading {
+    font-size: 35px;
+  }
+  .welcome__content {
+    align-items: center;
+  }
+  .welcome__block-text {
+    margin: 0;
+  }
+  .welcome__link {
+    font-size: 15px;
+    min-width: 140px;
+    height: 45px;
+  }
+  .companies__list-item {
+    width: 14%;
+  }
+  .features__heading-title {
+    font-size: 27px;
+  }
+  .stories__heading-title {
+    font-size: 27px;
+    line-height: 39px;
+  }
+  .total__heading {
+    font-size: 27px;
+  }
+  .desc__heading {
+    font-size: 27px;
+  }
+  .fashion__heading {
+    font-size: 27px;
+    width: 100%;
+    line-height: 38px;
+    margin-bottom: 15px;
+  }
+  .fashion__desc {
+    width: 100%;
+  }
+  .fashion__block-top {
+    flex-direction: column;
+  }
+  .app__block-item-top-title {
+    font-size: 27px;
+    line-height: 45px;
+  }
+  .footer__block:first-child {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .footer__block-list-images {
+    flex-direction: unset;
+    justify-content: center;
+  }
+  .footer__block-list-images-item:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+  .footer__block-title {
+    text-align: center;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+  .header__nav-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .header__nav-links-item img {
+    max-width: 85px;
+  }
+  .header__nav-list {
+    width: 215px;
+  }
+  .header__nav-list-link {
+    font-size: 17px;
+  }
+  .welcome__heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .welcome__link {
+    font-size: 14px;
+    min-width: 130px;
+    height: 40px;
+  }
+  .features__heading-title {
+    font-size: 24px;
+  }
+  .features__heading-desc {
+    line-height: 30px;
+  }
+  .features__list-item {
+    width: 100%;
+  }
+  .features__list-item-heading {
+    font-size: 20px;
+  }
+  .stories {
+    padding: 50px 0;
+  }
+  .stories__content {
+    flex-direction: column;
+  }
+  .stories__block {
+    width: 100%;
+  }
+  .stories__block:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+  .stories__heading {
+    text-align: center;
+  }
+  .stories__heading::before {
+    display: none;
+  }
+  .stories__heading-title {
+    font-size: 25px;
+  }
+  .total__heading {
+    font-size: 24px;
+  }
+  .total__heading, .total__desc {
+    text-align: center;
+  }
+  .desc__content {
+    flex-direction: column-reverse;
+  }
+  .desc__block:not(:first-child) {
+    margin-bottom: 35px;
+  }
+  .desc__block-text {
+    width: 100%;
+    padding: 0;
+  }
+  .desc__block-img {
+    width: 100%;
+  }
+  .desc__heading {
+    font-size: 24px;
+  }
+  .desc__par {
+    margin: 10px 0;
+  }
+  .fashion__heading {
+    font-size: 24px;
+  }
+  .app__block-item-top-title {
+    font-size: 24px;
+  }
+  .footer__block-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .footer__block-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 300px;
+  }
+  .header__nav-links {
+    display: none;
+  }
+  .welcome__heading {
+    font-size: 21px;
+    line-height: 41px;
+  }
+  .welcome__link {
+    font-size: 13px;
+    min-width: 115px;
+    height: 35px;
+  }
+  .features__heading {
+    font-size: 21px;
+  }
+  .stories__heading-title {
+    font-size: 21px;
+  }
+  .total__heading {
+    font-size: 21px;
+    line-height: 37px;
+  }
+  .desc__heading {
+    font-size: 21px;
+  }
+  .desc__par {
+    margin: 0;
+  }
+  .fashion__heading {
+    font-size: 21px;
+  }
+  .app__block-item-top-title {
+    font-size: 21px;
+  }
+}
+
+.show-right {
+  right: 0;
 }

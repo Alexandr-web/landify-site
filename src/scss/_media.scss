@@ -1,0 +1,810 @@
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1000px;
+  }
+  .welcome {
+    &__heading {
+      font-size: 60px;
+    }
+    &__link {
+      font-size: 19px;
+    }
+  }
+  .stories {
+    &__heading {
+      &::before {
+        left: -60px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .desc {
+    &__block-text {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 900px;
+  }
+  .welcome {
+    &__heading {
+      font-size: 53px;
+    }
+    &__link {
+      font-size: 18px;
+      min-width: 160px;
+      height: 59px;
+    }
+  }
+  .stories {
+    &__heading {
+      &::before {
+        left: -30px;
+        width: 85px;
+        height: 85px;
+        top: -30px;
+      }
+      &-title {
+        font-size: 45px;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 45px;
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        width: 75%;
+        &-title {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+  .desc {
+    &__img {
+      width: 300px;
+      height: 650px;
+    }
+    &__link {
+      font-size: 19px;
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 45px;
+      }
+      &-desc {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+  .welcome {
+    &__heading {
+      font-size: 49px;
+    }
+    &__link {
+      font-size: 17px;
+      min-width: 154px;
+      height: 52px;
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 40px;
+      }
+    }
+    &__list {
+      &-item {
+        &-heading {
+          font-size: 22px;
+        }
+        &-desc {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 90;
+    &__nav {
+      &-block {
+        &:nth-child(1) {
+          margin: 0 auto;
+        }
+      }
+      &-list {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        background: #000;
+        width: 250px;
+        height: 100vh;
+        justify-content: center;
+        transition: .5s;
+        z-index: 99;
+        &-item {
+          &:not(:last-child) {
+            margin: 0 0 15px 0;
+          }
+        }
+        &-link {
+          font-size: 19px;
+          color: #fff;
+        }
+      }
+      &-btn {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 5px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: none;
+        background: #000;
+        order: -1;
+        &-line {
+          display: block;
+          width: 100%;
+          height: 1.5px;
+          background: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .stories {
+    &__heading {
+      &::before {
+        left: -25px;
+        width: 80px;
+        height: 80px;
+        top: -25px;
+      }
+      &-title {
+        font-size: 40px;
+      }
+    }
+    &__block {
+      &:nth-child(1) {
+        .stories__comment {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        .stories__comment {
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .desc {
+    &__block {
+      &-img {
+        height: 395px;
+      }
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        width: 60%;
+        &-title {
+          font-size: 40px;
+        }
+        &-desc {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 40px;
+    }
+    &__desc {
+      font-size: 16px;
+    }
+    &__list {
+      &-item {
+        width: 48%;
+        &-heading {
+          font-size: 25px;
+        }
+        &-info {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .desc {
+    &__par {
+      font-size: 17px;
+    }
+    &__link {
+      font-size: 17px;
+    }
+  }
+  .fashion {
+    &__heading,
+    &__desc {
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+  .welcome {
+    &__heading {
+      font-size: 45px;
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 35px;
+      }
+      &-desc {
+        font-size: 16px;
+      }
+    }
+    &__list {
+      &-item {
+        width: 48%;
+      }
+    }
+  }
+  .stories {
+    &__heading {
+      &-title {
+        font-size: 35px;
+      }
+      &-desc {
+        font-size: 16px;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 35px;
+    }
+    &__list {
+      &-item {
+        &-heading {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+  .desc {
+    &__block {
+      &-img {
+        width: 40%;
+      }
+      &-text {
+        width: 55%;
+      }
+    }
+    &__heading {
+      font-size: 35px;
+    }
+    &__par {
+      font-size: 16px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+  .fashion {
+    &__heading {
+      font-size: 35px;
+    }
+    &__desc {
+      font-size: 16px;
+    }
+  }
+  .app {
+    &__block {
+      width: 100%;
+      &-item-top {
+        width: 100%;
+        &-title {
+          font-size: 35px;
+        }
+      }
+      &-item-bottom {
+        &-title {
+          font-size: 16px;
+        }
+      }
+    }
+    &__list {
+      &-images {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+  .welcome {
+    min-height: 550px;
+    &__heading {
+      font-size: 40px;
+      line-height: 55px;
+    }
+    &__link {
+      font-size: 16px;
+      min-width: 150px;
+      height: 50px;
+    }
+  }
+  .companies {
+    .container {
+      max-width: 100%;
+    }
+    &__list {
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+      }
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 30px;
+      }
+      &-desc {
+        font-size: 15px;
+      }
+    }
+  }
+  .stories {
+    &__heading {
+      &::before {
+        left: -20px;
+        width: 70px;
+        height: 70px;
+        top: -20px;
+      }
+      &-title {
+        font-size: 30px;
+        line-height: 55px;
+      }
+    }
+    &__comment {
+      &-desc {
+        font-size: 16px;
+      }
+      &-user-name {
+        font-size: 17px;
+      }
+      &-user-skills {
+        font-size: 15px;
+      }
+      &-img {
+        max-width: 50%;
+      }
+      &-main {
+        margin: 15px 0;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 30px;
+      line-height: 50px;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__block {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &__list {
+      &-item {
+        &-heading {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  .desc {
+    &__heading {
+      font-size: 30px;
+    }
+    &__par {
+      margin: 15px 0;
+    }
+  }
+  .fashion {
+    &__heading {
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 15px;
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        &-title {
+          font-size: 30px;
+          line-height: 55px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &-list {
+        &-link {
+          font-size: 14px;
+        }
+      }
+      &-copyright {
+        font-size: 13px;
+      }
+      &-title {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+  .header {
+    &__nav {
+      &-btn {
+        width: 35px;
+        height: 35px;
+        padding: 8px 5px;
+      }
+      &-links {
+        &-item {
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+  .welcome {
+    min-height: 425px;
+    &__heading {
+      font-size: 35px;
+    }
+    &__content {
+      align-items: center;
+    }
+    &__block {
+      &-text {
+        margin: 0;
+      }
+    }
+    &__link {
+      font-size: 15px;
+      min-width: 140px;
+      height: 45px;
+    }
+  }
+  .companies {
+    &__list-item {
+      width: 14%;
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 27px;
+      }
+    }
+  }
+  .stories {
+    &__heading {
+      &-title {
+        font-size: 27px;
+        line-height: 39px;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 27px;
+    }
+  }
+  .desc {
+    &__heading {
+      font-size: 27px;
+    }
+  }
+  .fashion {
+    &__heading {
+      font-size: 27px;
+      width: 100%;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+    &__desc {
+      width: 100%;
+    }
+    &__block {
+      &-top {
+        flex-direction: column;
+      }
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        &-title {
+          font-size: 27px;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &:first-child {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      &-list-images {
+        flex-direction: unset;
+        justify-content: center;
+        &-item {
+          &:not(:last-child) {
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+      &-title {
+        text-align: center;
+      }
+    }
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+  .header {
+    &__nav {
+      &-btn {
+        width: 32px;
+        height: 32px;
+      }
+      &-links {
+        &-item {
+          img {
+            max-width: 85px;
+          }
+        }
+      }
+      &-list {
+        width: 215px;
+        &-link {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .welcome {
+    &__heading {
+      font-size: 30px;
+      line-height: 45px;
+    }
+    &__link {
+      font-size: 14px;
+      min-width: 130px;
+      height: 40px;
+    }
+  }
+  .features {
+    &__heading {
+      &-title {
+        font-size: 24px;
+      }
+      &-desc {
+        line-height: 30px;
+      }
+    }
+    &__list {
+      &-item {
+        width: 100%;
+        &-heading {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .stories {
+    padding: 50px 0;
+    &__content {
+      flex-direction: column;
+    }
+    &__block {
+      width: 100%;
+      &:not(:last-child) {
+        margin: 0 0 15px 0;
+      }
+    }
+    &__heading {
+      text-align: center;
+      &::before {
+        display: none;
+      }
+      &-title {
+        font-size: 25px;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 24px;
+    }
+    &__heading,
+    &__desc {
+      text-align: center;
+    }
+  }
+  .desc {
+    &__content {
+      flex-direction: column-reverse;
+    }
+    &__block {
+      &:not(:first-child) {
+        margin-bottom: 35px;
+      }
+      &-text {
+        width: 100%;
+        padding: 0;
+      }
+      &-img {
+        width: 100%;
+      }
+    }
+    &__heading {
+      font-size: 24px;
+    }
+    &__par {
+      margin: 10px 0;
+    }
+  }
+  .fashion {
+    &__heading {
+      font-size: 24px;
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        &-title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      &-list {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 300px;
+  }
+  .header {
+    &__nav {
+      &-links {
+        display: none;
+      }
+    }
+  }
+  .welcome {
+    &__heading {
+      font-size: 21px;
+      line-height: 41px;
+    }
+    &__link {
+      font-size: 13px;
+      min-width: 115px;
+      height: 35px;
+    }
+  }
+  .features {
+    &__heading {
+      font-size: 21px;
+    }
+  }
+  .stories {
+    &__heading {
+      &-title {
+        font-size: 21px;
+      }
+    }
+  }
+  .total {
+    &__heading {
+      font-size: 21px;
+      line-height: 37px;
+    }
+  }
+  .desc {
+    &__heading {
+      font-size: 21px;
+    }
+    &__par {
+      margin: 0;
+    }
+  }
+  .fashion {
+    &__heading {
+      font-size: 21px;
+    }
+  }
+  .app {
+    &__block {
+      &-item-top {
+        &-title {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
